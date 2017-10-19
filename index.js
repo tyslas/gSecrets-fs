@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const hbs = require('hbs');
+const port = process.env.PORT || 3000;
+// const config = require('dotenv').config();
 
 app.set('view engine', 'hbs');
 app.use(express.static('public'))
